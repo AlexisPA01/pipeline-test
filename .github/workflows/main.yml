@@ -1,0 +1,27 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Tests
+        run: |
+            npm run cover
+
+        env:
+            HOST: ${{ secrets.HOST }}
+            DATABASE: ${{ secrets.DATABASE }}
+            USER: ${{ secrets.USER }}
+            PASSWORD: ${{ secrets.PASSWORD }}
+

@@ -16,6 +16,8 @@ const getContAsyncDevelopers = async (req,res) =>
 const postContAsyncDeveloper = async (req,res) => 
 {
     try{
+        console.table(req.body)
+
         const {
             Name,
             FoundationYear,
@@ -34,7 +36,7 @@ const postContAsyncDeveloper = async (req,res) =>
                 Country
             });
         
-            res.json(new response("OK Result",200,"Record added."));
+            res.json(new response("OK Result", 200, "Record added."));
         }
     }
     catch(error)

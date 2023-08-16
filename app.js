@@ -17,6 +17,7 @@ app.use(cors()) //Todo el mundo()
 
 // Middleware
 app.use(morgan("dev"));
+app.use(express.json());
 
 // Routes
 //app.use(sesionRouter);
