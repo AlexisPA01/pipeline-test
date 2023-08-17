@@ -1,7 +1,7 @@
 FROM node:18.14.0
 COPY . /app
 WORKDIR /app
-COPY package.json package-lock.json* ./
+COPY package.json ./
 COPY src ./src
 RUN npm install
 ENV PORT=3000
