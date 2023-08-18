@@ -25,7 +25,7 @@ describe('postContAsyncGame', () => {
     it('returns a 400 error if there is missing fields', async () => {
 
         const mockGame = {
-            //Name: 'Gane Test fail',
+            Name: 'Gane Test fail',
             Gender: 'Gender developer test',
             Platform: "Platform test",
             Price: 60,
