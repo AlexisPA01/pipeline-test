@@ -24,7 +24,6 @@ const postContAsyncGame = async (req,res) =>
             Price,
             IdDeveloper
         } = req.body
-        console.table(req.body)
         if( Name === undefined || Gender === undefined || Platform === undefined || Price === undefined || IdDeveloper === undefined )
         {
             res.status(400).json(new response("Bad request. Please fill all fields.",400,null));

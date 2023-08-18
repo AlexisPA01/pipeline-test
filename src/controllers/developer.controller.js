@@ -16,7 +16,6 @@ const getContAsyncDevelopers = async (req,res) =>
 const postContAsyncDeveloper = async (req,res) => 
 {
     try{
-        console.table(req.body)
 
         const {
             Name,

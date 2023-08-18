@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1692157771676" clover="3.2.0">
-  <project timestamp="1692157771676" name="All files">
-    <metrics statements="119" coveredstatements="62" conditionals="28" coveredconditionals="15" methods="23" coveredmethods="5" elements="170" coveredelements="82" complexity="0" loc="119" ncloc="119" packages="7" files="12" classes="12"/>
+<coverage generated="1692377739561" clover="3.2.0">
+  <project timestamp="1692377739562" name="All files">
+    <metrics statements="117" coveredstatements="60" conditionals="28" coveredconditionals="16" methods="23" coveredmethods="5" elements="168" coveredelements="81" complexity="0" loc="117" ncloc="117" packages="7" files="12" classes="12"/>
     <package name="dev-ops">
       <metrics statements="8" coveredstatements="8" conditionals="8" coveredconditionals="4" methods="0" coveredmethods="0"/>
       <file name="app.js" path="C:\Users\57311\Documents\Universidad\dev-ops\app.js">
@@ -20,9 +20,9 @@
       </file>
     </package>
     <package name="dev-ops.src.controllers">
-      <metrics statements="60" coveredstatements="25" conditionals="16" coveredconditionals="11" methods="8" coveredmethods="2"/>
+      <metrics statements="58" coveredstatements="23" conditionals="16" coveredconditionals="12" methods="8" coveredmethods="2"/>
       <file name="developer.controller.js" path="C:\Users\57311\Documents\Universidad\dev-ops\src\controllers\developer.controller.js">
-        <metrics statements="30" coveredstatements="13" conditionals="7" coveredconditionals="5" methods="4" coveredmethods="1"/>
+        <metrics statements="29" coveredstatements="11" conditionals="7" coveredconditionals="5" methods="4" coveredmethods="1"/>
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
@@ -30,32 +30,31 @@
         <line num="12" count="0" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="27" count="3" type="cond" truecount="5" falsecount="0"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="48" count="2" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="26" count="3" type="cond" truecount="5" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
-        <line num="51" count="0" type="stmt"/>
-        <line num="57" count="0" type="stmt"/>
-        <line num="59" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="77" count="0" type="stmt"/>
-        <line num="81" count="2" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
         <line num="83" count="0" type="stmt"/>
-        <line num="84" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
         <line num="86" count="0" type="stmt"/>
-        <line num="87" count="0" type="stmt"/>
-        <line num="91" count="0" type="stmt"/>
-        <line num="97" count="2" type="stmt"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="96" count="2" type="stmt"/>
       </file>
       <file name="game.controller.js" path="C:\Users\57311\Documents\Universidad\dev-ops\src\controllers\game.controller.js">
-        <metrics statements="30" coveredstatements="12" conditionals="9" coveredconditionals="6" methods="4" coveredmethods="1"/>
+        <metrics statements="29" coveredstatements="12" conditionals="9" coveredconditionals="7" methods="4" coveredmethods="1"/>
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
@@ -64,28 +63,27 @@
         <line num="17" count="2" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
         <line num="26" count="3" type="stmt"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="3" type="cond" truecount="6" falsecount="1"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="33" count="3" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="7" falsecount="0"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="64" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="84" count="0" type="stmt"/>
-        <line num="88" count="2" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
         <line num="90" count="0" type="stmt"/>
-        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
         <line num="93" count="0" type="stmt"/>
-        <line num="94" count="0" type="stmt"/>
-        <line num="98" count="0" type="stmt"/>
-        <line num="103" count="2" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="102" count="2" type="stmt"/>
       </file>
     </package>
     <package name="dev-ops.src.database">
@@ -150,7 +148,7 @@
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
@@ -167,9 +165,9 @@
       <metrics statements="9" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
       <file name="response.js" path="C:\Users\57311\Documents\Universidad\dev-ops\src\shared\response.js">
         <metrics statements="9" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
-        <line num="5" count="6" type="stmt"/>
-        <line num="6" count="6" type="stmt"/>
-        <line num="7" count="6" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>

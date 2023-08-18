@@ -17,7 +17,7 @@ describe('postContAsyncGame', () => {
             .post(`/api/game`)
             .send(mockGame);
 
-        //expect(result.body.data).toBe("Record added.");
+        expect(result.body.data).toBe("Record added.");
         expect(result.body.message).toBe("OK Result");
         expect(result.body.status).toBe(200);
     });
@@ -25,7 +25,6 @@ describe('postContAsyncGame', () => {
     it('returns a 400 error if there is missing fields', async () => {
 
         const mockGame = {
-            Name: 'Gane Test fail',
             Gender: 'Gender developer test',
             Platform: "Platform test",
             Price: 60,
