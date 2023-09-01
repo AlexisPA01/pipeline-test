@@ -32,10 +32,9 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
 
   create-pull-request:
-    runs-on: ubuntu-latest
     needs: test
     if: success()
-
+    
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -45,11 +44,11 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          base: main
+          branch: unitarias
           title: 'Merge successful unitarias tests'
           body: 'This pull request is automatically created after successful tests in unitarias.'
           labels: 'automerge'
-          base: 'main'
 
       - name: Pull Request Number
         run: echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
