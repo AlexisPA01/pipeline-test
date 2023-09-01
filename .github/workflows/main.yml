@@ -21,15 +21,28 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Tests
-        run: |
-          npm run cover
+      #- name: Run Tests
+        #run: |
+        #  npm run cover
 
+        #env:
+        #  HOST: ${{ secrets.HOST }}
+        #  DATABASE: ${{ secrets.DATABASE }}
+        #  USER: ${{ secrets.USER }}
+        #  PASSWORD: ${{ secrets.PASSWORD }}
+
+      - name: Test & publish code coverage
+        uses: paambaati/codeclimate-action@v5.0.0
         env:
+          CC_TEST_REPORTER_ID: ${{ vars.CODE_CLIMATE_ID }}
           HOST: ${{ secrets.HOST }}
           DATABASE: ${{ secrets.DATABASE }}
           USER: ${{ secrets.USER }}
           PASSWORD: ${{ secrets.PASSWORD }}
+        with:
+          coverageCommand: npm run cover
+        #coverageLocations: coverage/coverage-final.json
+          coverageLocations:  ${{github.workspace}}/coverage/*.info:lcov
 
   trigger-next-workflow:
     needs: test
