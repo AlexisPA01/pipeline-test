@@ -1,4 +1,4 @@
-name: CI/CD Pipeline 2
+name: CI/CD Pipeline 
 
 on:
   push:
@@ -31,26 +31,22 @@ jobs:
           USER: ${{ secrets.USER }}
           PASSWORD: ${{ secrets.PASSWORD }}
 
-  create-pull-request:
+  trigger-next-workflow:
     needs: test
     if: success()
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v3
+      - name: Trigger Next Workflow
+        uses: actions/github-script@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: main
-          branch: unitarias
-          title: 'Merge successful unitarias tests'
-          body: 'This pull request is automatically created after successful tests in unitarias.'
-          labels: 'automerge'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data } = await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'workflow_id_of_the_next_workflow',  # Reemplazar con el ID real
+            });
+            console.log(data);
 
-      - name: Pull Request Number
-        run: echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-  
+    

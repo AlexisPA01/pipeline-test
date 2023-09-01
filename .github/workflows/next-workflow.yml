@@ -1,0 +1,33 @@
+name: Next Workflow
+
+on:
+  workflow_run:
+    workflows:
+      - "CI/CD Pipeline"  # Nombre del primer flujo de trabajo
+    types:
+      - completed
+
+jobs:
+  next-job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Static Code Analysis with ESLint
+        run: npm run lint  # Ajusta el comando según cómo hayas configurado ESLint en tu proyecto
+
+      # Ejecutar las acciones adicionales que deseas realizar después de las pruebas exitosas
+      - name: Run Additional Actions
+        run: |
+          echo "Additional actions after successful tests and code analysis"
+
